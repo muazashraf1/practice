@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(237, 230, 221)
+    }
+
+    .calculator {
+        border: 3px solid black;
+        border-radius: 30px;
+        /* height:400px; */
+        width: 400px;
+        box-shadow: 0px 0px 20px 2px black;
+        margin: 40 auto;
+        background-color: rgb(66, 65, 65);
+    }
+
+    input {
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: black;
+        height: 100px;
+        width: 95%;
+        margin: 10px;
+        color: aliceblue;
+        font-size: 50px;
+    }
+
+    .all-btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* justify-content: space-around; */
+        gap: 10px;
+        margin: 13px;
+    }
+
+    .btn {
+        height: 70px;
+        width: 85px;
+        border: 2px solid black;
+        font-size: 38px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px black;
+        background-color: rgba(137, 136, 136, 0.594);
+        cursor: pointer;
+    }
+
+    .one {
+        background-color: rgb(207, 204, 204);
+    }
+
+    .two {
+        background-color: rgb(207, 204, 204);
+    }
+
+    .three {
+        background-color: rgb(207, 204, 204);
+    }
+
+    .four {
+        background-color: rgb(207, 204, 204);
+    }
+
+    .five {
+        color: white
+    }
+
+    .six {
+        color: white
+    }
+
+    .seven {
+        color: white
+    }
+
+
+    .eight {
+        background-color: rgb(207, 204, 204);
+    }
+
+    .nine {
+        color: white
+    }
+
+    .ten {
+        color: white
+    }
+
+    .eleven {
+        color: white
+    }
+
+    .tweleve {
+        background-color: rgb(207, 204, 204);
+    }
+
+    .thirteen {
+        color: white
+    }
+
+    .fourteen {
+        color: white
+    }
+
+    .fifteen {
+        color: white;
+    }
+
+    .sixteen {
+        background-color: orange;
+    }
+
+    .seventeen {
+        color: white
+    }
+
+    .eighteen {
+        color: white;
+    }
+
+    .ninteen {
+        background-color: rgb(207, 204, 204);
+    }
+
+    .twenty {
+        background-color: rgb(207, 204, 204);
+    }
+</style>
+
+<body>
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator in js</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="Calculator">
+            <input type="text" readonly name="" id="">
+            <div class="all-btns">
+                <button class="btn one">C</button>
+                <button class="btn two">/</button>
+                <button class="btn three">*</button>
+                <button class="btn four">-</button>
+                <button class="btn five">7</button>
+                <button class="btn six">8</button>
+                <button class="btn seven">9</button>
+                <button class="btn eight">*</button>
+                <button class="btn nine">4</button>
+                <button class="btn ten">5</button>
+                <button class="btn eleven">6</button>
+                <button class="btn tweleve">.</button>
+                <button class="btn thirteen">1</button>
+                <button class="btn fourteen">2</button>
+                <button class="btn fifteen">3</button>
+                <button class="btn sixteen">+</button>
+                <button class="btn seventeen">0</button>
+                <button class="btn eighteen">%</button>
+                <button class="btn ninteen">AC</button>
+                <button class="btn twenty">=</button>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+
+    </html>
+
+
+
+    <script>
+
+        const allBtns = document.querySelectorAll("button")
+        const inp = document.querySelector("input")
+
+        allBtns.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                const val = e.target.innerText
+                
+                if(val == "=") {
+                    inp.value = eval(inp.value)
+                } else {
+                    
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>
